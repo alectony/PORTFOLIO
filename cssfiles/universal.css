@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #2563eb;
+    --dark-bg: #0f172a;
+    --light-text: #f8fafc;
+    --gray-text: #94a3b8;
+    --card-bg: #1e293b;
+}
+.btn {
+    text-decoration: none;
+    color: #6D4C41; 
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+
+    background: radial-gradient(circle at center, #003366 0%, #050505 100%);
+    font-family: "Audiowide", sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0), rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.card {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10%;
+}
+.card p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; 
+    font-family: "Major Mono Display", monospace;
+}
+.card h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem; 
+    font-family: "Bungee Hairline", sans-serif;
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.projects {
+    padding: 5rem 10%;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-img {
+    height: 200px;
+    background: #334155;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    padding: 5rem 10%;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0), rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socials {
+    margin-top: 2rem;
+    color: var(--gray-text);
+}
