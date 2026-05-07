@@ -5,13 +5,7 @@
     --gray-text: #94a3b8;
     --card-bg: #1e293b;
 }
-.btn {
-    text-decoration: none;
-    color: #6D4C41; 
-    padding: 10px 15px;
-    display: block;
-    font-weight: bold;
-}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,52 +14,48 @@
 }
 
 body {
-
+    width: 100%;
     background: radial-gradient(circle at center, #003366 0%, #050505 100%);
     font-family: "Audiowide", sans-serif;
-    background-color: var(--dark-bg);
     color: var(--light-text);
     line-height: 1.6;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
-.navbar {
-    background: linear-gradient(135deg, rgba(0, 51, 102, 0), rgba(0, 0, 0, 0.5));
-    backdrop-filter: blur(10px); 
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 10%;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+body p {
+    font-size: 1.1rem;
+    font-family: "Audiowide", sans-serif;
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
 
-.nav-links a {
-    color: var(--light-text);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
 
-.nav-links a:hover {
-    color: var(--primary-color);
-}
 
 .card {
     height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between; 
+    text-align: left;
     padding: 0 10%;
+    gap: 2rem;
+}
+.card-content {
+    flex: 1;
+    font-family: "Audiowide", sans-serif;
+}
+.hero-image-container {
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 10%;
+
+}
+
+.hero-image-container img {
+    width:300px;
+    border-radius:50%;
+        border: 1px solid grey;
 }
 .card p {
     font-size: 1.5rem;
@@ -131,15 +121,116 @@ body {
     margin-bottom: 1rem;
 }
 
-footer {
-    padding: 5rem 10%;
-    text-align: center;
-    background: linear-gradient(135deg, rgba(0, 51, 102, 0), rgba(0, 0, 0, 0.5));
-    backdrop-filter: blur(10px); 
-    border: 1px solid rgba(255, 255, 255, 0.1);
+.main-footer {
+    background:  #003366 0%, #050505 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4rem 5% 2rem;
+    font-family: "Audiowide", sans-serif;
+    margin-top: 5rem;
 }
 
-.socials {
-    margin-top: 2rem;
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-brand p {
     color: var(--gray-text);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    max-width: 300px;
+}
+
+.footer-nav h4, .footer-socials h4 {
+    color: var(--light-text);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-nav a {
+    color: var(--gray-text);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-nav a:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    color: var(--light-text);
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+    transform: translateY(-5px);
+    text-shadow: 0 0 15px var(--primary-color); 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 0px solid rgba(255, 255, 255, 0.05);
+    color: var(--gray-text);
+    font-size: 0.8rem;
+}
+
+
+
+.page-transition {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--dark-bg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+    .card {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+        padding: 5rem 10%;
+    }
+    
+    .hero-image-container {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .card h1 {
+        font-size: 2.5rem;
+    }
 }

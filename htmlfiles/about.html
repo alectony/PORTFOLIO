@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../cssfiles/universal.css">
     <link rel="stylesheet" href="../cssfiles/header.css">
+    <link rel="stylesheet" href="../cssfiles/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Major+Mono+Display&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@
         <!-- header -->
 
      <div class="header">
-        <h3 class="table_1">My Portfolio</h3>
+        <a class="dropbtn" href="index.html">My Portfolio<a>
         <table class="table_1" border="0" cellspacing-left = "5px">
             <td>
                 <div class="dropdown">
@@ -79,18 +80,46 @@
 
         <!-- main content -->
 
+<header class="card-about" id="about">
+    <div class="card-content-about">
+        <h1 class="page-title">The Person Behind <span class="highlight">The Code</span></h1>
+        <p class="bio-text">
+            I am a Software Developer and Designer currently studying at the <strong>City College of Science and Technology</strong>. 
+            My journey started with a curiosity for how digital worlds are built, which evolved into a passion for creating 
+            functional, high-performance applications.
+        </p>
+        <p class="bio-text">
+            I believe that great software isn't just about writing code—it's about solving human problems with 
+            creative logic. When I'm not debugging, you'll find me exploring music theory on my piano or 
+            challenging myself in the gym.
+        </p>
+        <div class="cta-area">
+            <a href="experience.html" class="btn">View Professional Experience</a>
+        </div>
+    </div>
 
-        <header class="card" id="about">
-            <div class="card-content">
-                <h1>Hi, I'm <span class="highlight">Anthony Bisnar</span></h1>
-                <p>A Creative Developer & Designer</p>
-                <a href="projects.html" class="btn">View My Work</a>
-            </div>
+    <div class="hero-image-container">
+        <img src="../images/tony.png" alt="Anthony Bisnar" class="profile-img">
+    </div>
+</header>
 
-            <div class="hero-image-container">
-                <img src="..//images/tony.png" alt="Anthony Bisnar">
-            </div>
-        </header>
+<section class="philosophy">
+    <div class="section-container">
+        <div class="philosophy-card">
+            <h3>Versatility</h3>
+            <p>From C# to Python to desktop apps and to modern web design, I enjoy mastering different layers of the tech stack.</p>
+        </div>
+        <div class="philosophy-card">
+            <h3>Grounded Design</h3>
+            <p>Inspired by "Outdoor Boys," I value content and tools that are practical, honest, and task-oriented.</p>
+        </div>
+        <div class="philosophy-card">
+            <h3>Constant Growth</h3>
+            <p>Whether it's music theory or a new API, I am always in a state of learning.</p>
+        </div>
+    </div>
+</section>
+
 
             <!-- main content -->
 

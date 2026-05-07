@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../cssfiles/universal.css">
     <link rel="stylesheet" href="../cssfiles/header.css">
+    <link rel="stylesheet" href="../cssfiles/projects.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Major+Mono+Display&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@
         <!-- header -->
 
      <div class="header">
-        <h3 class="table_1">My Portfolio</h3>
+        <a class="dropbtn" href="index.html">My Portfolio<a>
         <table class="table_1" border="0" cellspacing-left = "5px">
             <td>
                 <div class="dropdown">
@@ -78,19 +79,51 @@
 
 
         <!-- main content -->
+         
+        <header class="card projects-hero">
+    <div class="card-content">
+        <h1>Selected <span class="highlight">Works</span></h1>
+        <p class="bio-text">A showcase of software architecture, web environments, and interactive logic.</p>
+    </div>
+</header>
 
-
-        <header class="card" id="about">
-            <div class="card-content">
-                <h1>Hi, I'm <span class="highlight">Anthony Bisnar</span></h1>
-                <p>A Creative Developer & Designer</p>
-                <a href="projects.html" class="btn">View My Work</a>
+<section class="projects-gallery">
+    <div class="project-grid">
+        
+        <div class="project-card-v2">
+            <div class="project-preview">
+                <img src="../images/csharp.png" alt='"Grab & Go" POS Interface' class="asset-placeholder">
             </div>
-
-            <div class="hero-image-container">
-                <img src="..//images/tony.png" alt="Anthony Bisnar">
+            <div class="project-info">
+                <span class="category-tag">Software Development</span>
+                <h3>POS & Payroll System</h3>
+                <p>A comprehensive C# desktop application managing inventory, automated PDF receipt generation, and complex payroll calculations for small-scale retail.</p>
+                <div class="tech-used">
+                    <span>C#</span><span>SQL Server</span><span>WinForms</span>
+                </div>
+                <a href="designing.html" class="view-project">View Process →</a>
             </div>
-        </header>
+        </div>
+
+
+        <div class="project-card-v2">
+            <div class="project-preview">
+                <img src="../images/geographic.png" alt="Nature-Themed Web Design" class="asset-placeholder">
+            </div>
+            <div class="project-info">
+                <span class="category-tag">Web Design</span>
+                <h3>Philippine Geographic</h3>
+                <p>An educational nature-themed website series focusing on clean UI and responsive navigation logic for geographic data presentation.</p>
+                <div class="tech-used">
+                    <span>HTML5</span><span>CSS3</span><span>UI/UX</span>
+                </div>
+                <a href="" class="view-project">Visit Site →</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 
             <!-- main content -->
 

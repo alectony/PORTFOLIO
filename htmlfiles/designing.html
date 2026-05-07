@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../cssfiles/universal.css">
     <link rel="stylesheet" href="../cssfiles/header.css">
+    <link rel="stylesheet" href="../cssfiles/design.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Major+Mono+Display&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@
         <!-- header -->
 
      <div class="header">
-        <h3 class="table_1">My Portfolio</h3>
+        <a class="dropbtn" href="index.html">My Portfolio<a>
         <table class="table_1" border="0" cellspacing-left = "5px">
             <td>
                 <div class="dropdown">
@@ -79,18 +80,48 @@
 
         <!-- main content -->
 
+<header class="card design-hero">
+    <div class="card-content">
+        <h1>Design <span class="highlight">Philosophy</span></h1>
+        <p class="bio-text">Beyond the final pixels: How I move from a blank canvas to a functional digital environment.</p>
+    </div>
+</header>
 
-        <header class="card" id="about">
-            <div class="card-content">
-                <h1>Hi, I'm <span class="highlight">Anthony Bisnar</span></h1>
-                <p>A Creative Developer & Designer</p>
-                <a href="projects.html" class="btn">View My Work</a>
+<section class="process-section">
+    <div class="process-step">
+        <div class="step-number">01</div>
+        <div class="step-text">
+            <h3>The Blueprint (Wireframing)</h3>
+            <p>Every project starts with a logic map. I define the user journey, database relationships, and UI hierarchy before a single line of code is written.</p>
+            <div class="design-asset">
+                <img src="../images/asset01_logic_map_pos_flowchart.svg" alt="Logic Flow / Wireframe View" class="asset-placeholder">
             </div>
+        </div>
+    </div>
 
-            <div class="hero-image-container">
-                <img src="..//images/tony.png" alt="Anthony Bisnar">
+    <div class="process-step inverse">
+        <div class="step-number">02</div>
+        <div class="step-text">
+            <h3>Visual Identity & UI</h3>
+            <p>This is where the aesthetic meets the function. For my portfolio, I chose a "Cyber-Dark" theme using high-contrast blues and radial gradients to evoke a modern, high-tech feel.</p>
+            <div class="design-asset">
+                <img src="../images/asset02_design_system_style_tile.svg" alt="Color Palette & Component Design" class="asset-placeholder">
             </div>
-        </header>
+        </div>
+    </div>
+
+    <div class="process-step">
+        <div class="step-number">03</div>
+        <div class="step-text">
+            <h3>Development & Refinement</h3>
+            <p>Turning designs into reality. I focus on responsive CSS, efficient C# backend logic, and ensuring that the transition from a wireframe to a live build is seamless.</p>
+            <div class="design-asset">
+                <img src="../images/asset03_build_comparison_before_after.svg" alt="Logic Flow / Wireframe View" class="asset-placeholder">
+            </div>
+        </div>
+    </div>
+</section>
+
 
             <!-- main content -->
 

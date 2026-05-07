@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../cssfiles/universal.css">
     <link rel="stylesheet" href="../cssfiles/header.css">
+    <link rel="stylesheet" href="../cssfiles/now.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Major+Mono+Display&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@
         <!-- header -->
 
      <div class="header">
-        <h3 class="table_1">My Portfolio</h3>
+        <a class="dropbtn" href="index.html">My Portfolio<a>
         <table class="table_1" border="0" cellspacing-left = "5px">
             <td>
                 <div class="dropdown">
@@ -78,19 +79,47 @@
 
 
         <!-- main content -->
+<header class="card now-hero">
+    <div class="card-content">
+        <h1>Current <span class="highlight">Status</span></h1>
+        <p class="bio-text">A real-time look at what I'm building, learning, and aiming for right now.</p>
+    </div>
+</header>
 
-
-        <header class="card" id="about">
-            <div class="card-content">
-                <h1>Hi, I'm <span class="highlight">Anthony Bisnar</span></h1>
-                <p>A Creative Developer & Designer</p>
-                <a href="projects.html" class="btn">View My Work</a>
+<section class="now-section">
+    <div class="now-grid">
+        
+        <div class="now-card active-work">
+            <div class="status-badge">ACTIVE</div>
+            <h3><i class="fa-solid fa-hammer"></i> What I'm Building</h3>
+            <p>Refining my <strong>C# POS & Payroll System</strong>, specifically optimizing the SQL query performance and adding a custom reporting dashboard for sales analytics.</p>
+            <div class="current-tags">
+                <span>#WinForms</span><span>#SQLServer</span><span>#DotNet</span>
             </div>
+        </div>
 
-            <div class="hero-image-container">
-                <img src="..//images/tony.png" alt="Anthony Bisnar">
+        <div class="now-card learning">
+            <div class="status-badge learning-badge">LEARNING</div>
+            <h3><i class="fa-solid fa-book-open"></i> Currently Learning</h3>
+            <p>Diving into <strong>Advanced Music Theory</strong> to improve my Piano arpeggios and exploring <strong>Blazor</strong> for modern web application development.</p>
+            <div class="current-tags">
+                <span>#MusicTheory</span><span>#Blazor</span><span>#WebAssembly</span>
             </div>
-        </header>
+        </div>
+
+        <div class="now-card goals">
+            <div class="status-badge goal-badge">GOALS</div>
+            <h3><i class="fa-solid fa-bullseye"></i> 2026 Objectives</h3>
+            <ul class="goals-list">
+                <li>Finish 2nd College</li>
+                <li>Start and maybe finish my first Game Development project with friends.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
 
             <!-- main content -->
 

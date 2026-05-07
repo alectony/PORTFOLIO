@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../cssfiles/universal.css">
     <link rel="stylesheet" href="../cssfiles/header.css">
+    <link rel="stylesheet" href="../cssfiles/services.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Major+Mono+Display&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@
         <!-- header -->
 
      <div class="header">
-        <h3 class="table_1">My Portfolio</h3>
+        <a class="dropbtn" href="index.html">My Portfolio<a>
         <table class="table_1" border="0" cellspacing-left = "5px">
             <td>
                 <div class="dropdown">
@@ -79,18 +80,52 @@
 
         <!-- main content -->
 
+<header class="card services-hero">
+    <div class="card-content">
+        <h1>My <span class="highlight">Services</span></h1>
+        <p class="bio-text">Providing technical solutions and creative designs tailored to functional needs.</p>
+    </div>
+</header>
 
-        <header class="card" id="about">
-            <div class="card-content">
-                <h1>Hi, I'm <span class="highlight">Anthony Bisnar</span></h1>
-                <p>A Creative Developer & Designer</p>
-                <a href="projects.html" class="btn">View My Work</a>
-            </div>
+<section class="services-grid-section">
+    <div class="services-container">
+        
+        <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Software Development</h3>
+            <p>Building robust desktop applications with a focus on database management and payroll logic using C# and .NET frameworks.</p>
+            <ul class="service-list">
+                <li>Custom POS Systems</li>
+                <li>Database Integration</li>
+                <li>Inventory Tools</li>
+            </ul>
+        </div>
 
-            <div class="hero-image-container">
-                <img src="..//images/tony.png" alt="Anthony Bisnar">
-            </div>
-        </header>
+        <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Web Design & Dev</h3>
+            <p>Creating responsive, modern websites with clean UI/UX. Specializing in HTML, CSS, and interactive front-end elements.</p>
+            <ul class="service-list">
+                <li>Portfolio Websites</li>
+                <li>Landing Pages</li>
+                <li>Responsive Layouts</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-video"></i></div>
+            <h3>Creative Media</h3>
+            <p>Grounded video editing and digital content creation inspired by task-oriented storytelling and professional presentation.</p>
+            <ul class="service-list">
+                <li>Video Editing</li>
+                <li>Documentary Styles</li>
+                <li>Visual Presentations</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
 
             <!-- main content -->
 

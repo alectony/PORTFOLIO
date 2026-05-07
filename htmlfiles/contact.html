@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../cssfiles/universal.css">
     <link rel="stylesheet" href="../cssfiles/header.css">
+    <link rel="stylesheet" href="../cssfiles/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Hairline&family=Major+Mono+Display&display=swap" rel="stylesheet">
 </head> 
 <body>
 
-    <!-- scroll up button -->
+    <!-- js stuff -->
 
     <button id="scrollTopBtn" onclick="scrollToTop()"><b>↑</b></button>
     <script src="scrollup.js"></script>
 
-    <!-- scroll up button -->
+    <!-- js stuff -->
 
 
 
@@ -26,7 +27,7 @@
         <!-- header -->
 
      <div class="header">
-        <h3 class="table_1">My Portfolio</h3>
+        <a class="dropbtn" href="index.html">My Portfolio<a>
         <table class="table_1" border="0" cellspacing-left = "5px">
             <td>
                 <div class="dropdown">
@@ -79,18 +80,50 @@
 
         <!-- main content -->
 
+        
+<header class="card contact-hero">
+    <div class="card-content">
+        <h1>Let's <span class="highlight">Connect</span></h1>
+        <p class="bio-text">Whether you have a project in mind, a question about my code, or just want to talk music theory—my inbox is always open.</p>
+    </div>
+</header>
 
-        <header class="card" id="about">
-            <div class="card-content">
-                <h1>Hi, I'm <span class="highlight">Anthony Bisnar</span></h1>
-                <p>A Creative Developer & Designer</p>
-                <a href="projects.html" class="btn">View My Work</a>
+<section class="contact-section">
+    <div class="contact-container">
+        <div class="contact-info-card">
+            <h3>Contact Details</h3>
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <p>anthonyjohnbisnar@gmail.com</p>
             </div>
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Mabalacat City, Philippines</p>
+            </div>
+            
+            <div class="social-grid">
+                <a href="https://github.com/alectony" class="social-box"><i class="fa-brands fa-github"></i></a>
+                <a href="https://facebook.com/anthonyjohnbisnar" class="social-box"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-box"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
 
-            <div class="hero-image-container">
-                <img src="..//images/tony.png" alt="Anthony Bisnar">
-            </div>
-        </header>
+        <div class="contact-form-wrapper">
+                <div class="form-group">
+                    <input type="text" name="from_name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="reply_to" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+</section>
+
 
             <!-- main content -->
 
@@ -133,5 +166,7 @@
         <!-- Footer -->
 
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="email.js"></script>
 </body>
 </html>
